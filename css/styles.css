@@ -1,1 +1,91 @@
 /*AJUSTES GENERALES*/
+:root {
+  --fuentePrincipal: "Quicksand", sans-serif;
+  --khaki: #b6a297ff;
+  --auburn: #a43c3bff;
+  --night: #101012ff;
+  --black-olive: #373830ff;
+  --chestnut: #884b39ff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--night);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: var(--khaki);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+a,
+p {
+  font-family: var(--fuentePrincipal);
+}
+
+a:hover {
+  background-color: var(--khaki);
+  color: var(--night);
+  border-radius: 2vh;
+  transition: background-color 1s, color 0.5s;
+  -webkit-transition: background-color 1s, color 0.5s;
+  -moz-transition: background-color 1s, color 0.5s;
+  -ms-transition: background-color 1s, color 0.5s;
+  -o-transition: background-color 1s, color 0.5s;
+  -webkit-border-radius: 2vh;
+  -moz-border-radius: 2vh;
+  -ms-border-radius: 2vh;
+  -o-border-radius: 2vh;
+}
+
+.navegation {
+  display: flex;
+  padding: 2rem;
+  margin: 1vh;
+  background-color: var(--black-olive);
+  border-radius: 2vh;
+  -webkit-border-radius: 2vh;
+  -moz-border-radius: 2vh;
+  -ms-border-radius: 2vh;
+  -o-border-radius: 2vh;
+}
+
+.nav__left {
+  display: flex;
+}
+
+.nav__Right {
+  width: 85%;
+  gap: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  object-fit: cover;
+}
